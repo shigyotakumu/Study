@@ -1,8 +1,82 @@
 @charset "utf-8";
 
 /*コメント*/
-p {
+/* div{ */
+    /* margin-bottom: 200px;
+    margin-left: 200px;
+    margin-right: 200px;
+    margin-top: 200px; */
+    /* margin: 200px 200px 200px 200px; */
+
+    /* width:calc(100% - 100px);
+    height: 100px;
+    background-color: aqua;
+    transform: translate(-200px, 30px) rotate(30deg) skew(30deg);
+ */
+
+/* } */
+ .back p {
     color: brown;
     background-color: blanchedalmond;
-    
+    font-weight: bold;
+    font-size: 80px;
+    line-height: 1.0;
+    text-indent: 1em;
+    background-image: url(https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj1nV8sgLHA9KYWt9ooBS2EQlVMreisejrB7yeuL8-I15m3nT86vcT6HgZOSEwjkX3m2YfhydxUKNlyaqRf1Wy8N_Mp8Y329F2kx8GuULD_x8mj5ItRZm5U_woMY_On6GL5N1sgNLZORb0/s800/sakura_fubuki.png);
+
+}
+
+#text {
+    color: blue;
+}
+.text {
+    color: green;
+}
+a:hover {
+    color: red;
+}
+.parent p {
+    color: red;
+}
+.parent > p {
+    color: green;
+}
+.abc,
+.def {
+    width: 50px;
+    height: 50px;
+    background-color: blueviolet;
+    margin: 100px;
+}
+.def + a {
+    font-size: 60px;
+}
+@media screen and (max-width:768px) {
+ .sample {
+    background-color: red;
+ }   
+}
+@media screen and (min-width:768px) {
+    .sample {
+        background-color:pink ;
+    }
+}
+.box {
+    text-align: center;
+    padding: 20px;
+    border:2px solid red;
+    margin: 20px;
+}
+.block {
+    text-align: center;
+    padding: 20px;
+    border:2px solid red;
+    margin: 20px;
+}
+.line {
+    text-align: center;
+    padding: 20px;
+    border:2px solid red;
+    margin: 20px;
+    /* display: block; */
 }

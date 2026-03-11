@@ -10,4 +10,4 @@ shigyo_summer
 ## ルール
 ・毎日5時間学習
 ・毎日GitHubにPush
-・Webアプリを公開する
+・Webを公開する
