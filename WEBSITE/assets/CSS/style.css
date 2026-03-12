@@ -7,6 +7,13 @@ body{
   line-height: 1.5;
   color: #333;
 }
+label, input, select, textarea, button {
+    cursor: pointer;
+}
+button {
+    border: 0;
+
+}
 /* section */
 .section {
     padding: 30px 15px;
@@ -20,6 +27,11 @@ body{
     font-weight: bold;
     margin: 0 0 40px 0;
 }
+.section-button {
+    margin-top: 40px;
+    text-align: center;
+}
+
 /* 
 Grid
  */
@@ -48,8 +60,8 @@ Grid
 .about {
 margin: 0;
 display: flex;
-
 }
+
 /* .about-image */
 .about-caption {
     margin-left: 15px;
@@ -139,4 +151,66 @@ Avotor
     margin: 0;
     border-radius: 50%;
     overflow: hidden;
+}
+
+/* 
+buttn
+ */
+ .button {
+    display: inline-block;
+    color: #fff;
+    font-weight: bold;
+    background-color: #333;
+    text-align: center;
+    padding: 15px 60px;
+    text-decoration: none;
+    border-radius: 5px;
+    box-shadow: 5px 5px 0 #bbb;
+    transition:  box-shadow .25s;
+ }
+.button:hover {
+    box-shadow: 0 0 0 #bbb;
+}
+.button-submit {
+    background-color: #92d3ca;
+}
+
+/* 
+select, input, radio, textarea
+ */
+ .select {
+    border-radius: 5px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    min-width: 500px;
+ }
+ .input {
+    border-radius: 5px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    min-width: 500px;
+ }
+ .radio {
+    margin: 0 10px;
+ }
+ .textarea {
+    border-radius: 5px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    min-width: 500px;
+ }
+
+/* .form */
+.form-table {
+    margin: 0 auto;
+}
+.form-table th {
+padding: 10px;
+}
+.form-table td {
+    padding: 10px;
+}
+.form-button {
+    margin: 20px;
+    text-align: center;
 }
