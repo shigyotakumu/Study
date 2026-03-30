@@ -1,0 +1,40 @@
+html {
+    font-size: 18px;
+}
+#contaner {
+    width: 500px;
+    margin: 0 auto 0;
+}
+#text-input {
+    width: 100%;
+    height: 40px;
+    box-sizing: border-box;
+    font-size: 1rem;
+    padding: 10px;
+    margin: 20px 0 20px;
+}
+#todo-list {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.list-item {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+
+.delet-button {
+    border: none;
+    outline: none;
+    background: transparent;
+    cursor: pointer;
+    color: #ff333f;
+    font-weight: bold;
+    font-size: 1rem;
+}
+.delet-button:hover {
+    color: #ff6666;
+}

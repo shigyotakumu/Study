@@ -54,3 +54,30 @@ console.log(document);
 document.getElementsByTagName("button")[0].addEventListener("click", ()=> {
     window.alert("Hello World!!!!")
 });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+document.getElementsByTagName("button")[1].addEventListener("click", () => {
+    window.alert("クリックされました")
+});
