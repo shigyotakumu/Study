@@ -28,7 +28,7 @@ submitButton.addEventListener("click", () => {
     } else {
         li.textContent = `${guessNumber}より小さいです`;
     }
-    if (guessCount === maxCount){
+    if (guessCount === maxCount && guessNumber !== randomNumber) {
         message.textContent = `Game Over 正解は${randomNumber}です！！`
         message.classList.add("incorrect");
         finishGuess();
@@ -41,7 +41,15 @@ submitButton.addEventListener("click", () => {
 
 });
 
-function finishGuess () {
+inputNumber.addEventListener("keydown", (e) => {
+    if (e.key !== "Enter") {
+        return;
+    };
+    submitButton.click();
+    e.preventDefault();
+})
+
+function finishGuess() {
     inputNumber.disabled = true;
     submitButton.disabled = true;
     restartButton = document.createElement("button");
@@ -50,11 +58,11 @@ function finishGuess () {
     container.appendChild(restartButton);
 }
 
-function restartGame () {
+function restartGame() {
     inputNumber.disabled = false;
     submitButton.disabled = false;
-    
-    while (resultList.firstChild){
+
+    while (resultList.firstChild) {
         resultList.removeChild(resultList.firstChild);
     }
 
