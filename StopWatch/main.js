@@ -27,7 +27,7 @@ start.addEventListener('click', () => {
 
         let startMs = Date.now();
 
-        startMs = startMs - elapsedMs;
+        startMs = d
 
         timerID = setInterval(() => {
             const nowMs = Date.now();
