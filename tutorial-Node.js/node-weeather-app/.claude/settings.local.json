@@ -1,0 +1,9 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npm install *)",
+      "Bash(node main.js Tokyo)",
+      "Bash(git -C /c/Github/study/node-weeather-app ls-files --error-unmatch node_modules)"
+    ]
+  }
+}
